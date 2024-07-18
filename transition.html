@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .bike{
+            margin-left: 200px;
+            top: 200px;
+             width: 300px;
+            /* translate */
+            /* transform: translateX(500px); */
+            /* transform: translateY(500px);  */
+            /* transform: translate(600px, 500px); */
+
+            /* Rotate */
+            /* transform: rotateX(240deg); */
+            /* transform: rotateY(220deg); */
+            /* transform: rotateZ(220deg); */
+            /* transform: rotate(150deg); */
+            /* transform: rotate3d(1,1,2, 240deg); */
+
+            /* scale */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(3); */
+            /* transform: scale(5, 1); */
+
+            /* skew */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(50deg); */
+            /* transform: skew(60deg); */
+
+        }
+        .bike:hover{
+            /* width: 500px; */
+            /* transition: width 10s ease-out; */
+
+            /* transform: rotate(350deg) scale(2); */
+
+            transform: translateX(1000px) translateY(450px) rotate(330deg) skew(200deg) scale(1);
+            transition: transform 4s ease-in-out;
+            /* transition-delay: 3s; */
+
+        }
+
+    </style>
+</head>
+<body>
+    <img src="png-transparent-orange-and-black-sports-bike-suzuki-hayabusa-motorcycle-orange-mountain-bikes-sport-bike-suzuki-hayabusa-sport-motorcycle-bike-bicycle-car-motorcycle-thumbnail-removebg-preview.png"
+     alt="bike" class="bike">
+</body>
+</html>

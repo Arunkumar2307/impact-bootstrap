@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .static{
+            position: static;
+            border: 3px solid yellow;
+        }
+        .sticky{
+            position: sticky;
+            top: 10px;
+            padding: 5px;
+            background-color: aqua;
+            border: 2px red;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid greenyellow;
+            background-color: aqua;
+        }
+        .relative{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            left: 300px;
+            border: 3px solid yellow;
+
+        }
+        .absolute{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            left: 100px;
+            border: 3px solid yellow;
+            background-color: aqua  ;
+        }
+        h3{
+            outline: 2px solid black;
+            outline-offset: 5px;
+            border: 5px solid red;
+        }
+        .mydiv {
+            width: 100%;
+            position: absolute;
+            height: 300px;
+            background-color: peachpuff;
+        }
+        .mydiv div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: yellow;
+            border: 1px solid black;
+            opacity: 0.3;
+        }
+        .mybox{
+            position: absolute;
+            background-color: red !important;
+            opacity: 1 !important;
+            z-index: 0;
+        }  
+          </style>
+</head>
+<body>
+    
+    <div class="fixed">fixed the word</div>
+    <h1>css position property</h1>
+
+    <h3>position</h3>
+    <ul>
+        <li>static</li>
+        <li>sticky</li>
+        <li>realative</li>
+        <li>fixd</li>
+        <li>absolute</li>
+    </ul>
+    <div class="static">i am arun</div>
+    <div class="sticky">ak king </div>
+<br>
+   
+    <p style="font-size: 50px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aliquam, reiciendis quidem. Autem, fuga repellendus quod doloremque mollitia nam iste illo error assumenda, 
+        expedita dolorem laborum molestiae pariatur impedit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Hic alias dolore error inventore, ad ut quaerat libero placeat nesciunt dicta? Nisi dolorum vero molestias maxime eius,
+         pariatur ipsam repudiandae.
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+         Quia atque alias incidunt quis, quasi tenetur quo cum voluptas perferendis facilis repellendus ratione est. 
+         Impedit quae eius voluptate iure dicta consequatur.
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+         Placeat voluptatibus ex architecto accusantium blanditiis et ad modi voluptatem dolor delectus vero, 
+         dicta dignissimos, eos, aspernatur quos dolorem? Harum, accusamus delectus.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta odio optio! 
+         In laudantium eos ipsum iure doloribus atque ex ducimus corrupti minus harum, eum illum quas sed optio. Accusantium?
+    </p> 
+
+    <div class="relative">
+        <!-- position relative is moving but it cannot occupay its orginal position -->
+         this div element has position: realative;
+         <div class="absolute">
+            <!-- postion absolute is also moving but other elements can occpuy its orginal postion -->
+            this div element has position: absolute;
+         </div>
+         <div>html</div>
+    </div>
+  
+        <h3>outline property</h3>
+
+        <div class="fixed">
+            this dev element has position : fixed;
+        </div>
+            <h1>css position property</h1>
+            <br><br>
+            <h1>the z-index property</h1>
+            <div class="mydiv">
+                <div class="mybox">mybox</div>
+                <div style="top: 20px; left: 20px;z-index: 0;">z-index 0</div>
+                <div style="top: 40px; left: 40px;z-index: 1;">z-index 1</div>
+                <div style="top: 60px; left: 60px;z-index: 2;">z-index 2</div>
+                <div style="top: 80px; left: 80px;z-index: 3;">z-index 3</div>
+            </div>
+
+</body>
+</html>

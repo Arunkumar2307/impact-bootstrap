@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="on" onclick="toggle(event)">
+</body>
+<script>
+    // whenever an event occurs an event object is released/created
+    // we can capture the object by
+    // 1. passing the object in function call and
+    // 2. declaring an argument in the function definition
+
+    // function toggle(e){
+    //     console.log(e.target);
+    //     e.target.value = "OFF"
+    //     e.target.style = "background-color: red"
+    // }
+
+    let state =true
+    function toggle(e){
+        console.log(e.target);
+        if(state){
+        e.target.value = "OFF"
+        e.target.style = "background-color: red"
+        state = !state
+       }else{
+        e.target.value = "ON"
+        e.target.style = "background-color: green"
+        state = !state
+       }
+       console.log(state);
+    }
+</script>
+</html>

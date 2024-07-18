@@ -1,0 +1,33 @@
+.grid-container {
+    grid-template-colums: repeat(4, 1fr);
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar main main content1"
+    "content2 main main content3"
+    "content2 footer footer footer";
+    }
+    #header{
+        grid-area: header;
+    }
+    #sidebar{
+        grid-area: sidebar;
+        background-color: red;
+    }
+    #main{
+        grid-area: main;
+    }
+    #content1{
+        grid-area: content1;
+        background-color: red;
+    }
+    #content2{
+        grid-area: content2;
+    }
+    #content3{
+        grid-area: content3;
+        background-color: red;
+    }
+    #footer{
+        grid-area: footer;
+    }

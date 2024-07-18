@@ -1,0 +1,26 @@
+.grid-container {
+   
+    /* grid-template-columns: 100px 1fr 1fr; */
+    /* grid-template-colums: repeat(4, 300px); */
+   /* grid-template-colums: 1fr repeat(2, 100px) 1fr */
+     /* grid-template-columns: repeat(3, minmax(100px, 1fr)100px); */
+     /* grid-template-rows: repeat(4, 300px); */
+     /* grid-template-rows: repeat: 200px 300px 400px; */
+
+     /* for colums */
+     grid-template-columns: 100px 100px 100px 100px;
+     grid-template-rows: repeat(2 100px);
+     justify-content: space-evenly;
+     /* x-axis alighnment */
+     align-content: space-evenly;
+     /* y-axis alighnment */
+
+     height: 700px;
+     /* grid-template: repeat(2 100px) repeat(4 100px); */
+                    /* (row)             (column) */
+
+  
+}
+.items {
+  
+}

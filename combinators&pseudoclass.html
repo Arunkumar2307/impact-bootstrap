@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p{ 
+            color: red;
+            background-color: aqua;
+        }
+         div>p {
+            background-color: darkorange;
+            color: blue;
+          } 
+           div+p {
+            color: lime;
+            background-color: hotpink;
+             }    */
+            div~p {
+                color: lightcoral;
+                background-color: aqua;
+            }
+            </style>
+</head>
+<body > 
+    <h1>
+         a cominator is something that explains the relastiopnship between the selectors.
+    </h1>
+    <h2>there are four different cominator in css</h2>
+    <h3>1.descendent selector (sapce)</h3>
+    <h3>2.child selector(>)</h3>
+    <h3>3.adjacent sibling selector (+)</h3>
+    <h3>4.general sibling selector(~)</h3>
+
+    <h1>child selector</h1>
+        <p>
+            the child selector selects all elementes that are the children of spacified element
+        </p>
+        <h2>adjacent sibling selector</h2>
+        <p> the (+) selector is used to select an element that is directly after another specific element</p>
+
+    <div>
+        <p>paragraph 1</p>
+        <p>paragrph 2</p>
+        <section>
+            not child but descendant
+            <p>paragraph 3 (inside a selection element).</p>
+
+        </section>
+        <p>paragraph 4</p>
+        <p>paragraph 5</p>
+    </div>
+    <p>paragraph 6</p>
+    <p>paragraph 7</p>
+    <p>paragraph 8</p>
+    
+
+</body>
+</html>

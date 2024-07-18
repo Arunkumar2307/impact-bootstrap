@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+    <style>
+        .animation{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chartreuse;
+            animation-name: ARUN;
+            animation-duration: 6s;
+            animation-delay: 1;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes ARUN{
+            from{
+                background-color: brown;
+                left: 600px;
+                top: 300px;
+            }
+            to{
+                background-color: coral;
+            }
+        }
+  
+
+
+
+
+        @keyframes ARUN1{
+            25%{
+                background-color: blue;
+                left: 500px;
+                top: 20px;
+            }
+            50%{
+                background-color: burlywood;
+                left: 500px;
+                top: 500px;
+            }
+            75%{
+                background-color: blueviolet;
+                left: 20px;
+                top: 500px;
+            }
+            100%{
+                background-color: chocolate;
+                left: 20px;
+                top: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- keyframe - set of rules -->
+     <!-- animation-name
+     animation-duration
+     animation-delay
+     animation-iteration-count 
+     animation-duration 
+     animation-timing-funcion
+     animation-fill-mode
+     animation -->
+<!-- 
+     animation-duration 
+      normal forward (defaul)
+      reverse reverse direction (backward)
+      alternate forward first then backward 
+      alternate-reverse backward first,then forward -->
+
+      <!-- animation-timing-function 
+
+      ease  slow start, then fast, then end slowly
+      ease-in  slow start 
+      ease-out  slow end
+      ease-in-out  slow start and end 
+      linear  same speed from start to end 
+      cubic-bezle(n,n,n,n) own values (optional)
+       -->
+
+
+       <!-- animation-fill mode 
+
+       none  >   defaultivalue 
+       forward > last keyframe value 
+       backward > first keyframe value
+       both > first keyframe to last keyframe -->
+       <div class="animation">
+        animation
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
