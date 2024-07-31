@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pattern"></div>
+</body>
+<script>
+//     let patternText =""
+//     for(let i=1; i<=5;i++){
+//         //////// for(let j=1; j<=i; j++){ 
+//         for(let j=5; j>=i; j--){
+//             patternText =patternText + "* "
+//     }
+//     patternText = patternText + "<br>"
+// }
+// document.getElementById("pattern").innerHTML = patternText
+
+// i = 1
+//     j = 1 2 3 4 5
+//     j = 1
+// i = 2
+//     j = 1 2 3 4 5
+//     j = 1 2
+// i = 3
+//     j = 1 2 3 4 5
+//     j = 1 2 3
+// i = 4
+//     j = 1 2 3 4 5
+//     j = 1 2 3 4
+// i = 5
+//     j = 1 2 3 4 5
+//     j = 1 2 3 4 5
+
+for(let i=1; i<=5; i++){
+    for(let a=5; a>=i;a--){
+         patternText =patternText + "&nbsp"
+    }
+    for(let b=1; b>=i;b++){
+         patternText =patternText + "* "
+    }
+    patternText =patternText + "<br>"
+}
+document.getElementById("pattern").innerHTML =patternText
+
+</script>
+</html>
